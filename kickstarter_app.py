@@ -22,7 +22,7 @@ from sklearn.pipeline import Pipeline
 # Load the dataset (ensure the CSV file is in the same directory as this script)
 @st.cache_data
 def load_data():
-    data = pd.read_csv('C:/Users/User/Desktop/ML-work/kickstarter_2016.csv')
+    data = pd.read_csv('kickstarter_2016.csv')
     return data
 
 # Main function to run the app
@@ -82,7 +82,7 @@ def create_features(data):
 
 
 # Load the dataset
-df = pd.read_csv('C:/Users/User/Desktop/ML-work/kickstarter_2016.csv')
+df = pd.read_csv('kickstarter_2016.csv')
 
 # Create the target variable 'success' (1 for 'successful', 0 for other states)
 df['success'] = df['State'].apply(lambda x: 1 if x == 'successful' else 0)
@@ -109,7 +109,7 @@ st.write(df[['success', 'campaign_duration', 'name_length']].describe())
 # Load the dataset
 @st.cache_data
 def load_data():
-    data = pd.read_csv('C:/Users/User/Desktop/ML-work/kickstarter_2016.csv')
+    data = pd.read_csv('kickstarter_2016.csv')
     return data
 
 # Feature engineering
